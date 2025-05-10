@@ -1,0 +1,268 @@
+.clients {
+  padding: 40px 90px;
+
+  @include vp-1239 {
+    padding: 40px 15px;
+  }
+
+  @include vp-767 {
+    overflow: scroll;
+  }
+
+  &--active {
+    &::before {
+      content: "";
+      position: fixed;
+      height: 100vh;
+      width: 100vw;
+      background-color: rgba($color-black, 0.7);
+      left: 0;
+      top: 0;
+      z-index: 1;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include vp-767 {
+      display: block;
+    }
+  }
+
+  &__title {
+    margin: 0 0 26px;
+    font-size: 24px;
+    color: $color-black;
+
+    @include vp-1023 {
+      font-size: 18px;
+      margin: 0 0 18px;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      margin: 0 0 10px;
+    }
+  }
+
+  &__table {
+    margin: 0;
+    width: 100%;
+    color: $color-black;
+    margin-bottom: 40px;
+
+    @include vp-767 {
+      overflow: scroll;
+    }
+  }
+
+  &__table-wrapper {
+    display: grid;
+    grid-template-columns: 100px 1fr 155px 155px 110px 200px;
+    gap: 30px;
+    align-items: center;
+    padding: 8px 20px;
+
+    &--body {
+      background-color: $color-white;
+      border-bottom: 1px solid $color-border-gray;
+      padding: 10px 20px;
+      min-height: 60px;
+    }
+
+    @include vp-1239 {
+      gap: 10px;
+      grid-template-columns: 100px 1fr 155px 155px 110px 90px;
+    }
+
+    @include vp-1023 {
+      gap: 10px;
+      grid-template-columns: 100px 1fr 100px 100px 90px 68px;
+    }
+
+    @include vp-767 {
+      padding: 8px 5px;
+      grid-template-columns: 70px 1fr 60px 60px 90px 68px;
+    }
+  }
+
+  &__head-button {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    
+  }
+
+  &__head-text {
+    font-size: 12px;
+    color: $color-gray;
+    transition: color $transition;
+
+    &--active {
+      color: $color-fiol;
+    }
+
+    @include vp-1023 {
+      font-size: 10px;
+    }
+
+    @include vp-767 {
+      font-size: 8px;
+    }
+  }
+
+  &__arrow-icon {
+    transition: transform $transition600;
+    &--down {
+      transform: rotate(540deg);
+    }
+  }
+
+  &__arrow-text {
+    color: $color-fiol;
+  }
+
+  &__id {
+    font-size: 14px;
+    color: $color-gray;
+
+    @include vp-1023 {
+      font-size: 12px;
+    }
+
+    @include vp-767 {
+      font-size: 10px;
+    }
+  }
+
+  &__fcs {
+    font-size: 14px;
+    color: $color-black;
+
+    @include vp-1023 {
+      font-size: 12px;
+    }
+
+    @include vp-767 {
+      font-size: 10px;
+    }
+  }
+
+  &__date-wrapper {
+    display: flex;
+    gap: 7px;
+
+    @include vp-767 {
+      flex-direction: column;
+    }
+  }
+
+  &__create-date,
+  &__edit-date {
+
+    @include vp-1023 {
+      font-size: 12px;
+    }
+
+    @include vp-767 {
+      font-size: 10px;
+    }
+  }
+
+  &__create-time,
+  &__edit-time {
+    color: $color-gray;
+
+    @include vp-1023 {
+      font-size: 12px;
+    }
+
+    @include vp-767 {
+      font-size: 10px;
+    }
+  }
+
+  &__contacts-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+  }
+
+  &__contacts-btn {
+    opacity: 0.7;
+    &:hover .clients__contacts-icon {
+      opacity: 1;
+    }
+  }
+
+  &__contacts-icon {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    opacity: 0.7;
+    color: $color-fiol;
+    transition: opacity $transition;
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    gap: 30px;
+
+    @include vp-1239 {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  &__btn {
+    padding: 0;
+    color: $color-black;
+    transition: color $transition;
+    align-items: center;
+
+
+    @include vp-1023 {
+      font-size: 10px;
+    }
+  
+
+    &--edit {
+      &:hover,
+      &:focus-visible {
+        color: $color-fiol;
+      }
+    }
+
+    &--delete {
+      &:hover,
+      &:focus-visible {
+        color: $color-red;
+      }
+    }
+  }
+
+  &__add-button {
+    @include vp-1023 {
+      font-size: 12px;
+    }
+
+    @include vp-767 {
+      font-size: 10px;
+    }
+  }
+
+  &__add-button--active .clients::before {
+    display: block;
+  }
+}

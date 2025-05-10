@@ -1,0 +1,55 @@
+.custom-input {
+  width: 100%;
+  position: relative;
+
+  &__header {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 14px;
+    color: $color-black;
+    margin: 0;
+    border: 1px solid $color-gray;
+    outline: none;
+    cursor: pointer;
+
+    &::placeholder {
+      color: $color-gray;
+    }
+  }
+
+  &__field {
+    width: 100%;
+    min-height: 25px;
+    background-color: transparent;
+    border: none;
+    padding: 4px;
+    border-bottom: 1px solid $color-border-gray;
+    outline: none;
+    color: $color-black;
+    transition: border-color $transition;
+
+    @include vp-1023 {
+      font-size: 14px;
+      min-height: 20px;
+    }
+
+
+    &:hover,
+    &:focus-visible {
+      border-color: $color-fiol;
+    }
+  }
+
+  &__placeholder {
+    color: $color-border-gray;
+    position: absolute;
+    left: 4px;
+    top: 6px;
+    pointer-events: none;
+
+    &--star {
+      color: $color-fiol;
+    }
+  }
+}
+

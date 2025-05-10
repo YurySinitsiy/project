@@ -1,0 +1,15 @@
+.header {
+  padding: 20px 0;
+  box-shadow: 0px 9.03px 27.09px 0px $color-box-gray;
+  background-color: $color-white;
+
+  &__wrapper {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+  }
+
+  &__form {
+    width: 581px;
+  }
+}

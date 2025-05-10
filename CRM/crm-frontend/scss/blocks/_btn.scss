@@ -1,0 +1,74 @@
+.btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    padding: 0;
+
+    &--secondary {
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border: 1px solid $color-fiol;
+        outline: none;
+        color: $color-fiol;
+        padding: 12px;
+        width: 216px;
+        font-weight: 600;
+        transition: color $transition, background-color $transition;
+
+        &:hover {
+            background-color: $color-fiol-light;
+            color: $color-white;
+        }
+
+        &:focus-visible {
+            color: $color-white;
+            background-color: $color-fiol-dark;
+        }
+
+        &:disabled {
+            border-color: $color-gray;
+            color: $color-gray;
+            pointer-events: none;
+        }
+
+        @include vp-1023 {
+            width: 200px;
+            padding: 10px;
+            font-size: 12px;
+        }
+    }
+
+    &--primary {
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        color: $color-white;
+        background-color: $color-fiol;
+        padding: 14px;
+        transition: color $transition, background-color $transition;
+
+        @include vp-1023 {
+            width: 100px;
+            padding: 10px;
+            font-size: 12px;
+        }
+
+        &:hover {
+            background-color: $color-fiol-light;
+            color: $color-white;
+        }
+
+        &:focus-visible {
+            color: $color-white;
+            background-color: $color-fiol-dark;
+        }
+
+        &:disabled {
+            background-color: $color-gray;
+            color: $color-white;
+            pointer-events: none;
+        }
+    }
+}

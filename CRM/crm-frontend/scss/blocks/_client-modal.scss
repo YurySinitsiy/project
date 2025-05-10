@@ -1,0 +1,350 @@
+.client-modal {
+  &__wrapper {
+    width: 450px;
+    min-height: 396px;
+    background-color: $color-white;
+    position: absolute;
+    top: calc(50% - 189px);
+    left: calc(50% - 450px / 2);
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    opacity: 0;
+    transform: translateX(-150px);
+    animation: openModal 0.6s forwards;
+
+    @include vp-1023 {
+      width: 350px;
+      min-height: 250px;
+      left: calc(50% - 350px / 2);
+    }
+
+    @include vp-767 {
+      width: 320px;
+      padding: 8px;
+    }
+
+    &--delete {
+      min-height: 250px;
+      top: calc(50% - 125px);
+      justify-content: space-between;
+
+      @include vp-1023 {
+        min-height: 200px;
+        left: calc(50% - 320px / 2);
+      }
+    }
+  }
+
+  &__title {
+    margin: 0 0 32px;
+    color: $color-black;
+    font-size: 18px;
+
+    @include vp-1023 {
+      font-size: 16px;
+      margin: 0 0 22px;
+    }
+  }
+
+  &__button-close {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    top: 15px;
+    right: 15px;
+    outline: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 27px;
+      height: 2px;
+      background-color: $color-gray;
+      border-radius: 1px;
+      transform: rotate(45deg);
+      top: 11px;
+      left: 3px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 27px;
+      height: 2px;
+      background-color: $color-gray;
+      border-radius: 1px;
+      transform: rotate(135deg);
+      top: 11px;
+      left: 3px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 25px;
+    position: relative;
+
+    @include vp-1023 {
+      gap: 16px;
+      margin: 0px;
+    }
+
+    @include vp-767 {
+      gap: 8px;
+    }
+  }
+
+  &__inner {
+    position: relative;
+    min-height: 35px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 450px;
+      height: 100%;
+      left: 0px;
+      top: 0;
+      background-color: $color-light-gray;
+      margin: 0px -24px;
+      padding: 0px 24px;
+      z-index: -1;
+
+      @include vp-1023 {
+        width: 350px;
+      }
+
+      @include vp-767 {
+        width: 320px;
+        margin: 0px -8px;
+        padding: 0px 8px;
+      }
+    }
+  }
+
+  &__button {
+    color: $color-black;
+    font-weight: 600;
+    display: flex;
+    gap: 4px;
+    color: $color-black;
+    transition: color $transition;
+
+    @include vp-1023 {
+      font-size: 12px;
+      align-items: center;
+    }
+
+    &:hover {
+      color: $color-fiol;
+    }
+
+    &-save {
+      margin: 0 auto 5px;
+    }
+
+    &-cancel {
+      margin: 0 auto;
+      color: $color-black;
+      text-decoration: underline;
+      transition: color $transition;
+
+      &:hover,
+      &:focus-visible {
+        color: $color-red;
+      }
+
+      @include vp-1023 {
+        font-size: 12px;
+      }
+    }
+
+    &:disabled {
+      pointer-events: none;
+      color: $color-gray;
+    }
+  }
+
+  &__subform {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    &--active {
+      padding: 25px 0;
+
+      @include vp-1023 {
+        font-size: 12px;
+        padding: 10px 0;
+        gap: 10px;
+      }
+    }
+
+    &-wrapper {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 0 15px;
+
+      @include vp-1023 {
+        grid-template-columns: 21px 85px 1fr 20px;
+        height: 40px;
+      }
+    }
+
+    &-input {
+      padding: 8px 12px;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      border: 1px solid $color-border-gray;
+
+      @include vp-1023 {
+        font-size: 12px;
+        padding: 4px 6px;
+      }
+    }
+
+    &-reset {
+      border-top: 1px solid $color-border-gray;
+      border-bottom: 1px solid $color-border-gray;
+      border-right: 1px solid $color-border-gray;
+      position: relative;
+      background-color: $color-form-gray;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+
+      @include vp-1023 {
+        height: 38px;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 14px;
+        height: 2px;
+        background-color: #b0b0b0;
+        border-radius: 1px;
+        transform: rotate(45deg);
+        top: calc(50% - 3px);
+        left: 4px;
+
+        @include vp-1023 {
+          left: 3px;
+        }
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 14px;
+        height: 2px;
+        background-color: #b0b0b0;
+        border-radius: 1px;
+        transform: rotate(135deg);
+        top: calc(50% - 3px);
+        left: 4px;
+
+        @include vp-1023 {
+          left: 3px;
+        }
+      }
+    }
+
+    &-delete {
+      position: relative;
+      background-color: $color-form-gray;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+
+      @include vp-1023 {
+        height: 38px;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 14px;
+        height: 2px;
+        background-color: $color-red;
+        border-radius: 1px;
+        transform: rotate(45deg);
+        top: calc(50% - 3px);
+        left: 8px;
+
+        @include vp-1023 {
+          left: 3px;
+        }
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 14px;
+        height: 2px;
+        background-color: $color-red;
+        border-radius: 1px;
+        transform: rotate(135deg);
+        top: calc(50% - 3px);
+        left: 8px;
+
+        @include vp-1023 {
+          left: 3px;
+        }
+      }
+    }
+  }
+
+  &__warning {
+    font-size: 18px;
+    color: $color-black;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 20px;
+
+    @include vp-1023 {
+      font-size: 14px;
+      margin: 0 0 10px;
+    }
+  }
+
+  &__id {
+    position: absolute;
+    top: -47px;
+    left: 185px;
+    color: $color-gray;
+    font-size: 12px;
+
+    @include vp-1023 {
+      top: -35px;
+      left: 165px;
+    }
+  }
+}
+
+@keyframes openModal {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}

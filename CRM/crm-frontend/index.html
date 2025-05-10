@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панель управления клиентами</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/index.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <h2 class="visually-hidden">Панель управления клиентами</h2>
+                <a href="#" class="header__logo" aria-label="Логотип skb.">
+                    <svg class="header__logo" width="50" height="50" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-header-logo"></use>
+                    </svg>
+                </a>
+                <form action="#" method="POST" class="header__form">
+                    <div class="custom-input">
+                        <input type="text" class="custom-input__header" placeholder="Введите запрос">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="clients">
+            <div class="container">
+                <h2 class="clients__title">Клиенты</h2>
+                <div class="clients__wrapper">
+                    <table class="clients__table">
+                        <thead class="clients__table-head">
+                            <tr class="clients__table-wrapper">
+                                <th>
+                                    <button id="btn-id" type="button" class="clients__head-button clients__head-text"
+                                        aria-label="Кнопка сортировки по ID">ID
+                                        <svg class="clients__arrow-icon" width="12" height="12" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#arrow-icon"></use>
+                                        </svg>
+                                    </button>
+                                </th>
+                                <th>
+                                    <button id="btn-fcs" type="button" class="clients__head-button clients__head-text"
+                                        aria-label="Кнопка сортировки по ФИО">Фамилия Имя Отчество
+                                        <svg class="clients__arrow-icon" width="12" height="12" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#arrow-icon"></use>
+                                        </svg>
+                                        <span class="clients__arrow-text">А-Я</span>
+                                    </button>
+                                </th>
+                                <th>
+                                    <button id="btn-create-at" type="button"
+                                        class="clients__head-button clients__head-text"
+                                        aria-label="Кнопка сортировки по дате и времени создания">Дата и время создания
+                                        <svg class="clients__arrow-icon" width="12" height="12" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#arrow-icon"></use>
+                                        </svg>
+                                    </button>
+                                </th>
+                                <th>
+                                    <button id="btn-edit-at" type="button"
+                                        class="clients__head-button clients__head-text"
+                                        aria-label="Кнопка сортировки по последнему изменению">Последние изменения
+                                        <svg class="clients__arrow-icon" width="12" height="12" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#arrow-icon"></use>
+                                        </svg>
+                                    </button>
+                                </th>
+                                <th>
+                                    <span class="clients__head-text">Контакты</span>
+                                </th>
+                                <th>
+                                    <span class="clients__head-text">Действия</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="clients__table-body">
+
+                        </tbody>
+                    </table>
+                    <button class="clients__add-button btn btn--secondary" type="button">
+                        <svg class="clients__add-icon" width="23" height="16" aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#add-user-icon"></use>
+                        </svg>
+                        Добавить клиента
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/components/Loader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+    <script src="./js/vendor/popprjs.min.js"></script>
+    <script src="./js/vendor/tippy.min.js"></script>
+    <script src="./js/vendor/just-validate.js"></script>
+</body>
+
+</html>

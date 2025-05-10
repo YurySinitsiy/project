@@ -1,0 +1,65 @@
+.choices {
+  width: 123px;
+  color: white;
+  margin: 0;
+  font-size: 12px;
+
+  @include vp-1023 {
+    width: 85px;
+    display: flex;
+    flex-direction: column;
+    height: 38px;
+  }
+
+
+  /* Стилизация обертки */
+  &__inner {
+    background-color: $color-form-gray;
+    color: $color-white;
+    display: flex;
+    flex-direction: column;
+
+    @include vp-1023 {
+      min-height: 38px;
+ 
+    }
+  }
+
+  /* Стилизация выпадающего списка */
+  &__list {
+    background-color: $color-form-gray;
+    color: $color-black;
+    @include vp-1023 {
+      font-size: 12px;
+    }
+  }
+
+  &__list--dropdown .choices__item--selectable {
+    padding: 10px;
+
+    @include vp-1023 {
+      font-size: 12px;
+    }
+    
+  }
+
+  /* Стилизация подсветки при наведении на элемент списка */
+  &__list--dropdown &__item--selectable.is-highlighted {
+    background-color: $color-light-gray;
+    padding: 10px;
+  }
+
+  /* Стилизация стрелки */
+  &[data-type*="select-one"]:after {
+    border-color: $color-fiol transparent transparent;
+
+    @include vp-1023 {
+      top: 32px;
+      right: 62px;
+    }
+  }
+
+  &[data-type*="select-one"].is-open:after {
+    border-color: transparent transparent $color-fiol;
+  }
+}
