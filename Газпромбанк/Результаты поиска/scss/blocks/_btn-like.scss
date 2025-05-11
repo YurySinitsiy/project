@@ -1,0 +1,29 @@
+.btn-like {
+    position: fixed;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 50%;
+    color: $color-white;
+    background-color: $color-black-russian;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 180px;
+    right: 15px;
+
+    @include vp-768 {
+      bottom: 197px;
+      right: 20px;
+    }
+
+    @include vp-1024 {
+      bottom: 225px;
+    }
+
+    &:hover,
+    &:focus-visible {
+      background-color: $color-blue-zodiac;
+    }
+  }

@@ -1,0 +1,28 @@
+.btn-icon {
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  outline: none;
+  color: $color-black-russian;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: $color-royal-blue-1;
+  }
+
+  &--light {
+    color: $color-mischka;
+  }
+}

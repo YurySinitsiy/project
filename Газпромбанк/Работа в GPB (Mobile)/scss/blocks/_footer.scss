@@ -1,0 +1,47 @@
+.footer {
+  padding: 0 0 30px;
+  $root: &;
+
+  &--nav {
+    padding: 0;
+    margin: auto 0 0 0;
+    position: relative;
+
+    #{$root}__logo {
+      color: $color-white;
+    }
+
+    #{$root}__copyright {
+      color: $color-white;
+    }
+
+    #{$root}__link {
+      color: $color-white;
+      text-decoration: underline;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    margin: 0 0 28px 0;
+    color: $color-black;
+
+    svg {
+      height: 14px;
+      width: 278px;
+    }
+  }
+
+  &__copyright {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 21px 0;
+    color: $color-dim-gray;
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-blue;
+  }
+}

@@ -1,0 +1,52 @@
+.burger {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 32px;
+  position: relative;
+  z-index: 20;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: $color-black;
+    left: 0;
+    top: 9px;
+    transform-origin: center;
+    transition: transform $transition-300, background-color $transition-300, top $transition-300 0.4s; 
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: $color-black;
+    left: 0;
+    bottom: 9px;
+    transform-origin: center;
+    transition: transform $transition-300, background-color $transition-300, bottom $transition-300 0.4s;
+  }
+
+  .header--open & {
+    &::before {
+      top: 14px;
+      background-color: $color-white;
+      transform: rotate(45deg);
+      transition: top $transition-300, background-color $transition-300, transform $transition-300 0.3s;
+    }
+
+    &::after {
+      bottom: 14px;
+      background-color: $color-white;
+      transform: rotate(-45deg);
+      transition: bottom $transition-300, background-color $transition-300, transform $transition-300 0.3s;
+    }
+  }
+}

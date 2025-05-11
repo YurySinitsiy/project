@@ -1,0 +1,83 @@
+.debit-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  background-color: $color-solitude-1;
+  border-radius: 12px;
+  padding: 20px;
+  min-height: 200px;
+
+  @media (min-width: 450px) {
+    height: 100%;
+  }
+
+  @include vp-768 {
+    min-height: 280px;
+    padding: 24px;
+  }
+
+  @include vp-1024 {
+    align-items: center;
+    gap: 0;
+    padding: 0;
+    background-color: unset;
+    min-height: 228px;
+  }
+
+  @include vp-1304 {
+    min-height: 218px;
+  }
+
+  &__icon {
+    color: $color-black-russian;
+
+    @include vp-1024 {
+      width: 64px;
+      height: 64px;
+      padding: 16px;
+      background-color: $color-royal-blue-1;
+      color: $color-white;
+      border-radius: 12px;
+      margin: 0 0 20px;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: $color-black-russian;
+
+    @include vp-1024 {
+      font-size: 24px;
+      line-height: 28px;
+      margin: 0 0 16px;
+      text-align: center;
+    }
+  }
+
+  &__descr {
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-storm-grey-3;
+
+    @include vp-1024 {
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+    }
+  }
+
+  &__link {
+    color: $color-royal-blue-1;
+    outline: none;
+
+    &:hover,
+    &:focus-visible {
+      color: $color-free-speech-blue;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+.hero {
+  overflow: hidden;
+  margin: 0 0 40px 0;
+
+  &__wrapper {
+    padding: 28px 0 40px;
+    min-height: calc(100vh - 92px);
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    font-size: 48px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: $color-blue;
+    margin: 0 0 60px 0;
+  }
+
+  &__title-bottom {
+    padding: 0 0 0 91px;
+  }
+
+  &__intro {
+    margin: 0 0 23px 0;
+    position: relative;
+    padding: 0 0 243px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+
+    &:not(:last-child) {
+      margin: 0 0 20px 0;
+    }
+  }
+
+  &__circle-text {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: -59px;
+    animation: rotateCircle 10s linear infinite;
+  }
+
+  &__mouse-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: auto auto 0;
+  }
+
+  &__icon-point {
+    transform: translateY(0px);
+    opacity: 0;
+    animation: icopPointMove 1.5s linear infinite;
+  }
+}
+
+@keyframes rotateCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes icopPointMove {
+  0% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+}

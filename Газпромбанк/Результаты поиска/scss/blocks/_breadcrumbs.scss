@@ -1,0 +1,55 @@
+.breadcrumbs {
+  margin: 0 0 40px;
+
+  @include vp-1024 {
+    padding: 20px 0 0;
+    margin: 0 0 43px;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 19px;
+    align-items: center;
+  }
+
+  &__link {
+    position: relative;
+    font-size: 13px;
+    line-height: 16px;
+    outline: none;
+
+    @include vp-1024 {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+  }
+
+  &__link:not(span) {
+    color: $color-storm-grey-1;
+
+    &:hover,
+    &:focus-visible {
+      color: $color-royal-blue-1;
+    }
+  }
+
+  &__link:not(span)::after {
+    content: "";
+    height: 3px;
+    width: 3px;
+    border-radius: 50%;
+    background-color: $color-storm-grey-1;
+    position: absolute;
+    right: -9px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include vp-1024 {
+      right: -12px;
+    }
+  }
+}

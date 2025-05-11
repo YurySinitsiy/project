@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Результаты поиска - Газпромбанк</title>
+</head>
+
+<body>
+  <!-- header- -search-active -->
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__wrapper">
+          <svg class="header__icon-decor" width="24" height="24" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-decor"></use>
+          </svg>
+          <a class="header__logo-link" href="#" aria-label="Ссылка на главную страницу">
+            <svg class="header__logo-image" width="188" height="40" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#logo-gazprombank"></use>
+            </svg>
+          </a>
+          <div class="header__links">
+            <a class="header__link" href="#">
+              Частным клиентам
+            </a>
+            <a class="header__link header__link--light" href="#">
+              Private Banking
+            </a>
+            <a class="header__link header__link--light" href="#">
+              МСБ
+            </a>
+          </div>
+          <div class="header__links">
+            <button class="header__link header__link--active">
+              Москва
+            </button>
+            <a class="header__link" href="#">
+              Офисы и банкоматы
+            </a>
+          </div>
+          <button class="header__search btn-icon" aria-label="Открыть поиск">
+            <svg class="btn-icon__icon" width="24" height="24" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-search"></use>
+            </svg>
+          </button>
+          <a class="header__login btn" href="#">
+            Войти
+          </a>
+          <button class="header__burger btn-icon" aria-label="Открыть меню">
+            <svg class="btn-icon__icon" width="24" height="24" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-burger"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container">
+        <form class="search-form search-form--header" action="#" method="GET">
+          <fieldset class="search-form__group">
+            <div class="custom-search">
+              <input class="custom-search__field" type="search" name="search-header" id="search-header" value="вжух">
+              <div class="custom-search__btn-group">
+                <button class="custom-search__btn btn-icon" type="reset" aria-label="Кнопка очистить ">
+                  <svg class="btn-icon__icon" width="24" height="24" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-close"></use>
+                  </svg>
+                </button>
+                <button class="custom-search__btn btn-icon" type="submit" aria-label="Кнопка поиска">
+                  <svg class="btn-icon__icon" width="24" height="24" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-search"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <button class="search-form__button" type="submit">Найти</button>
+            <div class="search-form__recommendation">
+              <ul class="search-form__recommendation-list">
+                <li class="search-form__recommendation-item">
+                  <a class="search-form__recommendation-btn" href="#">Что входит в&nbsp;Привилегии?</a>
+                </li>
+                <li class="search-form__recommendation-item">
+                  <a class="search-form__recommendation-btn" href="#">Курсы валют</a>
+                </li>
+                <li class="search-form__recommendation-item">
+                  <a class="search-form__recommendation-btn" href="#">Где скачать приложение?</a>
+                </li>
+                <li class="search-form__recommendation-item">
+                  <a class="search-form__recommendation-btn" href="#">Рефинансирование</a>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <span class="breadcrumbs__link">Результаты поиска</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section class="search-result search-result--empty">
+      <div class="container">
+        <h1 class="search-result__heading">Результаты поиска</h1>
+        <div class="search-result__wrapper">
+          <form class="search-form" action="#" method="GET">
+            <fieldset class="search-form__group">
+              <div class="custom-search">
+                <input class="custom-search__field" type="search" name="search" id="search" value="вжух">
+                <div class="custom-search__btn-group">
+                  <button class="custom-search__btn btn-icon" type="reset" aria-label="Кнопка очистить ">
+                    <svg class="btn-icon__icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-close"></use>
+                    </svg>
+                  </button>
+                  <button class="custom-search__btn btn-icon" type="submit" aria-label="Кнопка поиска">
+                    <svg class="btn-icon__icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="images/sprite.svg#icon-search"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <button class="search-form__button" type="submit">Найти</button>
+              <div class="search-form__recommendation">
+                <ul class="search-form__recommendation-list">
+                  <li class="search-form__recommendation-item">
+                    <a class="search-form__recommendation-btn" href="#">Что входит в&nbsp;Привилегии?</a>
+                  </li>
+                  <li class="search-form__recommendation-item">
+                    <a class="search-form__recommendation-btn" href="#">Курсы валют</a>
+                  </li>
+                  <li class="search-form__recommendation-item">
+                    <a class="search-form__recommendation-btn" href="#">Где скачать приложение?</a>
+                  </li>
+                  <li class="search-form__recommendation-item">
+                    <a class="search-form__recommendation-btn" href="#">Рефинансирование</a>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+          </form>
+          <div class="search-result__empty">
+            <picture>
+              <source media="(min-width: 1024px)"
+                srcset="images/not-found-desktop.png 1x, images/not-found-desktop@2x.png 2x" width="240" height="240">
+              <source media="(min-width: 768px)"
+                srcset="images/not-found-tablet.png 1x, images/not-found-tablet@2x.png 2x" width="180" height="180">
+              <img src="images/not-found-mobile.png" srcset="images/not-found-mobile@2x.png 2x" alt="Изображение поиска"
+                width="140" height="140">
+            </picture>
+            <div class="search-result__empty-text">
+              <h2 class="search-result__empty-heading">Ничего не&nbsp;нашлось</h2>
+              <span class="search-result__empty-descr">Попробуйте изменить запрос</span>
+            </div>
+          </div>
+          <div class="search-result__technology">
+            <span class="search-result__technology-text">Поисковая технология</span>
+            <svg class="search-result__technology-icon" width="66" height="20" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#logo-yandex"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <button class="btn-like" type="button" aria-label="Кнопка лайк">
+        <svg class="btn-like__icon" width="24" height="24" aria-hidden="true">
+          <use xlink:href="images/sprite.svg#icon-like"></use>
+        </svg>
+      </button>
+      <div class="cookie">
+        <p class="cookie__text">
+          Мы&nbsp;обрабатываем файлы cookie, чтобы улучшить работу сайта. Оставаясь на&nbsp;нашем сайте,
+          вы&nbsp;соглашаетесь с
+          <a class="cookie__link" href="#">Политикой пользовательских данных</a>. Если вы&nbsp;хотите запретить
+          обработку
+          файлов
+          cookie, отключите cookie в
+          настройках вашего браузера
+        </p>
+        <button class="cookie__btn btn-icon" type="button" aria-label="Кнопка закрыть coockie ">
+          <svg class="btn-icon__icon" width="24" height="24" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__left">
+          <a class="footer__logo-link" href="#" aria-label="Ссылка на главную страницу">
+            <svg class="footer__logo-image" width="188" height="40" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#logo-gazprombank"></use>
+            </svg>
+          </a>
+          <a class="footer__app" href="#">
+            <img class="footer__app-icon" width="48" height="48" src="images/icon-gpb-app.svg"
+              alt="Логотип приложения Газпромбанка">
+            <p class="footer__app-text">
+              <span class="footer__app-name">
+                Газпромбанк
+              </span>
+              <span class="footer__app-platform">
+                для Android
+              </span>
+            </p>
+          </a>
+          <div class="footer__contacts">
+            <div class="footer__phone">
+              <span class="footer__phone-text">
+                Бесплатно по&nbsp;России
+              </span>
+              <a class="footer__phone-link" href="tel:88001000701">
+                8&nbsp;800&nbsp;100 07&nbsp;01
+              </a>
+            </div>
+            <div class="footer__phone">
+              <span class="footer__phone-text">
+                Бесплатно с&nbsp;мобильных
+              </span>
+              <a class="footer__phone-link" href="tel:400">
+                400
+              </a>
+            </div>
+          </div>
+          <div class="footer__feedback">
+            <span class="footer__feedback-text">
+              Есть жалобы и&nbsp;предложения?
+            </span>
+            <button class="footer__feedback-btn btn btn--tertiary" type="button">
+              Обратная связь
+            </button>
+          </div>
+          <div class="footer__location">
+            <span class="footer__location-text">
+              Ваше местоположение
+            </span>
+            <a class="footer__location-link" href="#">
+              <svg class="footer__location-icon" width="16" height="16" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-location"></use>
+              </svg>
+              <span>Москва</span>
+            </a>
+          </div>
+        </div>
+        <ul class="footer__nav-list footer__nav-list--empty">
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">
+              О&nbsp;газпромбанке
+            </a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">
+              Пресс-центр
+            </a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">
+              Документы и&nbsp;тарифы
+            </a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">
+              Закупки
+            </a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">
+              Реквизиты
+            </a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">
+              Комплаенс
+            </a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">
+              Противодействие коррупции
+            </a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">
+              Аналитика
+            </a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">
+              Аресты и&nbsp;взыскания с&nbsp;банковских счетов
+            </a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">
+              Сведения о&nbsp;наличии счетов и&nbsp;другой информации
+            </a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">
+              Информация для нотариусов
+            </a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">
+              Направление обращений финансовому уполномоченному
+            </a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">
+              Карьера в&nbsp;Газпромбанке
+            </a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">
+              Кредитные карты
+            </a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">
+              Потребительские кредиты
+            </a>
+          </li>
+        </ul>
+        <div class="footer__right">
+          <div class="footer__policy">
+            <a class="footer__policy-link" href="#">
+              Информация о процентных ставках по договорам банковского вклада с физическими лицами
+            </a>
+            <a class="footer__policy-link" href="#">
+              Раскрытие информации профессиональным участником рынка ценных бумаг
+            </a>
+            <a class="footer__policy-link" href="#">
+              Информация для клиентов по Федеральному закону №115-ФЗ
+            </a>
+            <a class="footer__policy-link" href="#">
+              Частная политика обработки и защиты персональных данных в Газпромбанке
+            </a>
+            <a class="footer__policy-link" href="#">
+              Раскрытие информации на сайте ООО «Интерфакс-ЦРКИ»
+            </a>
+            <a class="footer__policy-link" href="#">
+              Сообщения о ценных бумагах
+            </a>
+          </div>
+          <p class="footer__cookie">
+            Сайт Газпромбанка (Акционерное общество) использует cookie-файлы. Что это значит? Сookie&nbsp;&mdash; это
+            небольшие файлы, которые содержат информацию о&nbsp;предыдущих посещениях сайта. Они используются для
+            персонализации сервисов и&nbsp;для повышения удобства работы с&nbsp;сайтом. Если вы&nbsp;не&nbsp;хотите,
+            чтобы сookie хранились на&nbsp;вашем устройстве, вы&nbsp;можете запретить их&nbsp;в&nbsp;настройках браузера
+            или с&nbsp;помощью специальных программ. Обратите внимание, что после их&nbsp;отключения сайт может работать
+            хуже
+          </p>
+          <ul class="socials footer__socials">
+            <li class="socials__item">
+              <a class="socials__link" href="#" aria-label="Ссылка на ВК">
+                <svg class="socials__icon" width="16" height="16" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#" aria-label="Ссылка на Одноклассники">
+                <svg class="socials__icon" width="16" height="16" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-ok"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#" aria-label="Ссылка на Телеграм">
+                <svg class="socials__icon" width="16" height="16" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#" aria-label="Ссылка на YouTube">
+                <svg class="socials__icon" width="16" height="16" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-yt"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="footer__copyright">
+            <p class="footer__copyright-text">
+              &copy; 1990-2024, Банк ГПБ (АО) Генеральная лицензия Банка России &#8470;&nbsp;354
+            </p>
+            <span class="footer__copyright-date">
+              Информация от&nbsp;<time datetime="2024-01-05">5.01.2024</time>
+            </span>
+          </div>
+          <a class="footer__language-link" href="#" aria-label="Ссылка на английскую версию сайта">
+            <svg class="footer__language-icon" width="20" height="20" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-flag"></use>
+            </svg>
+            <span>
+              English version
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

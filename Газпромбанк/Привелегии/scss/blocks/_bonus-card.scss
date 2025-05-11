@@ -1,0 +1,117 @@
+.bonus-card {
+  display: flex;
+  min-height: 200px;
+  height: 100%;
+  background-color: $color-seashell;
+  border-radius: 16px;
+  outline: none;
+
+  @media (min-width: 960px) {
+    min-height: 294px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 7px;
+  }
+
+  @include vp-1304 {
+    min-height: 270px;
+    gap: 0 6px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    box-shadow: 0px 0px 38px 19px rgba(16, 127, 212, 0.49);
+  }
+
+  &:hover .bonus-card__button,
+  &:focus-visible .bonus-card__button {
+    color: $color-free-speech-blue;
+  }
+
+  &__content {
+    min-height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px 0;
+
+    @include vp-768 {
+      padding: 24px 0 24px 24px;
+    }
+
+    @include vp-1304 {
+      padding: 32px;
+      gap: 8px 0;
+    }
+  }
+
+  &__label {
+    margin: 0;
+    padding: 8px 12px;
+    font-size: 13px;
+    line-height: 16px;
+    color: $color-white;
+    background-color: $color-black-russian;
+    border-radius: 12px;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    @media (min-width: 960px) {
+      max-width: 180px;
+      font-size: 28px;
+      line-height: 32px;
+    }
+
+    @include vp-1304 {
+      max-width: 240px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    flex-grow: 1;
+    font-size: 16px;
+    line-height: 22px;
+
+    @media (min-width: 960px) {
+      max-width: 180px;
+    }
+
+    @include vp-1304 {
+      max-width: 240px;
+    }
+  }
+
+  &__button {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0 8px;
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-black-russian;
+  }
+
+  &__icon {
+    flex-shrink: 0;
+  }
+
+  &__image {
+    display: none;
+    flex-shrink: 0;
+
+    @media (min-width: 960px) {
+      display: block;
+    }
+
+    @include vp-1304 {
+      margin: 0 40px 0 0;
+    }
+  }
+}

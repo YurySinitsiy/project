@@ -1,0 +1,36 @@
+/* Global */
+/* ------------------------------------ */
+@import "global/_normalize.scss";
+@import "global/_mixins";
+@import "global/_variables";
+@import "global/_fonts";
+@import "global/_reboot";
+@import "global/_container";
+@import "global/_visually-hidden";
+
+/* Blocks */
+/* ------------------------------------ */
+@import "blocks/_header";
+@import "blocks/_btn";
+@import "blocks/_btn-icon";
+@import "blocks/_intro";
+@import "blocks/_advantages";
+@import "blocks/_debit";
+@import "blocks/_debit-card";
+@import "blocks/_banner";
+
+
+@import "blocks/_socials";
+@import "blocks/_custom-input";
+@import "blocks/_custom-checkbox";
+@import "blocks/_form";
+@import "blocks/_bonus-card";
+@import "blocks/_subscription-card";
+
+@import "blocks/_bonus";
+@import "blocks/_application";
+@import "blocks/_subscriptions";
+@import "blocks/_connect";
+@import "blocks/_benefit";
+@import "blocks/_faq";
+@import "blocks/_footer";

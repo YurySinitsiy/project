@@ -1,0 +1,79 @@
+.banner {
+  margin: 0 0 60px;
+
+  @media (min-width: 960px) {
+    margin: 0 0 100px;
+  }
+
+  @include vp-1304 {
+    margin: 0 0 120px;
+  }
+
+  &__wrapper {
+    position: relative;
+    padding: 16px 20px;
+    background-color: $color-alice-blue;
+    border-radius: 16px;
+
+    @media (min-width: 450px) {
+      padding: 25px 24px;
+    }
+
+    @media (min-width: 960px) {
+      padding: 48px 100px;
+    }
+
+    @include vp-1304 {
+      padding: 48px 120px;
+    }
+  }
+
+  &__subtitle {
+    margin: 0 0 8px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: $color-black-russian;
+
+    @media (min-width: 960px) {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+
+  &__descr {
+    display: block;
+    max-width: 160px;
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-black-russian;
+
+    @media (min-width: 450px) {
+      max-width: 100%;
+    }
+
+    @media (min-width: 960px) {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: 8px;
+    right: 0;
+
+    @include vp-768 {
+      top: -16px;
+      right: 40px;
+    }
+
+    @media (min-width: 960px) {
+      top: -21px;
+    }
+
+    @include vp-1304 {
+      right: 184px;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.cookie {
+  position: fixed;
+  width: 330px;
+  display: flex;
+  padding: 12px 16px 12px 12px;
+  background-color: $color-white;
+  box-shadow: 0px 6px 20px 0px rgba(50, 54, 65, 0.2);
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  bottom: 69px;
+  right: 15px;
+
+  @include vp-768 {
+    width: 380px;
+    padding: 16px 20px 16px 16px;
+    gap: 18px;
+    bottom: 61px;
+    right: 21px;
+  }
+
+  @include vp-1024 {
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 10px;
+    line-height: 12px;
+    color: $color-black-russian;
+    padding: 0 16px 0 0;
+    border-right: 1px solid $color-hawkes-blue;
+
+    @include vp-768 {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    @include vp-1024 {
+      font-size: 13px;
+      line-height: 16px;
+    }
+  }
+
+  &__link {
+    color: $color-royal-blue-1;
+    outline: none;
+
+    &:hover,
+    &:focus-visible {
+      color: $color-mischka;
+    }
+  }
+
+
+  &__btn {
+    color: $color-mischka;
+  }
+}

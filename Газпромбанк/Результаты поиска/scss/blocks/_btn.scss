@@ -1,0 +1,62 @@
+.btn {
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 11px 20px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: $color-black-russian;
+  background-color: $color-solitude-3;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  &[disabled] {
+    cursor: default;
+  }
+
+  &:focus-visible,
+  &:hover {
+    background-color: $color-link-water;
+  }
+
+  &--secondary {
+    padding: 19px 32px;
+    color: $color-white;
+    background-color: $color-royal-blue-1;
+
+    &:focus-visible,
+    &:hover {
+      background-color: $color-free-speech-blue;
+    }
+  }
+
+  &--tertiary {
+    color: $color-white;
+    padding: 15px 24px;
+    background-color: $color-black-russian;
+
+    &:focus-visible,
+    &:hover {
+      background-color: $color-blue-zodiac;
+    }
+  }
+
+  &--quaternary {
+    padding: 12px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    background-color: $color-lavander;
+
+    @include vp-768 {
+      font-size: 13px;
+      line-height: 16px;
+    }
+  }
+
+}

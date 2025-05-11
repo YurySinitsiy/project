@@ -1,0 +1,42 @@
+.subscription-card {
+  height: 100%;
+  min-height: 248px;
+  border-radius: 12px;
+  background-color: $color-blue-zodiac-2;
+
+  &__image {
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  &__content {
+    padding: 16px 8px;
+
+    @include vp-768 {
+      padding: 16px 12px;
+    }
+
+    @include vp-1304 {
+      padding: 16px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-white;
+
+    @include vp-1304 {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 12px;
+    line-height: 16px;
+    color: $color-mischka;
+  }
+}

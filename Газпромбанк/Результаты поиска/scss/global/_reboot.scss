@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $ff-main;
+  font-style: normal;
+  font-weight: 400;
+  color: $color-black-russian;
+  margin: 0;
+  padding: 0;
+  background-color: $color-white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  padding: 70px 0 0 0;
+  flex-grow: 1;
+
+  @include vp-768 {
+    padding: 80px 0 0 0;
+  }
+
+  @include vp-1024 {
+    padding: 72px 0 0 0;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+
+a {
+  color: $color-black-russian;
+  text-decoration: none;
+}

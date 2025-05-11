@@ -1,0 +1,98 @@
+.search-form {
+  padding: 27px 0 0;
+  margin: 0 0 60px;
+
+  @include vp-768 {
+    padding: 34px 0 0;
+  }
+
+  @include vp-1024 {
+    padding: 89px 0 0;
+    margin: 0 0 80px;
+  }
+
+  &--header {
+    display: none;
+  }
+
+  &__group {
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    @include vp-1024 {
+      display: grid;
+      grid-template-columns: 1fr 110px;
+      gap: 16px;
+    }
+  }
+
+  &__button {
+    border: none;
+    padding: 19px;
+    outline: none;
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-white;
+    border-radius: 8px;
+    background-color: $color-royal-blue-1;
+    cursor: pointer;
+    width: 110px;
+    display: none;
+
+    @include vp-1024 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &:hover,
+    &:focus-visible {
+      background-color: $color-free-speech-blue;
+    }
+  }
+
+  &__recommendation {
+    padding: 20px 0 0;
+
+    @include vp-1024 {
+      padding: 0;
+    }
+
+    &--hidden {
+      display: none;
+    }
+
+    &-list {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    &-btn {
+      border: none;
+      outline: none;
+      border-radius: 8px;
+      padding: 12px 14px;
+      font-size: 12px;
+      line-height: 14px;
+      color: $color-black;
+      background-color: $color-lavander;
+      cursor: pointer;
+      display: flex;
+
+      @include vp-768 {
+        font-size: 13px;
+        line-height: 16px;
+      }
+
+      &:hover,
+      &:focus-visible {
+        background-color: $color-link-water;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<svg width="24.000000" height="20.000000" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<clipPath>
+			<rect  width="16.000000" height="12.000000" transform="translate(4.000000 4.000000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect width="24.000000" height="20.000000" fill="#121723" fill-opacity="1.000000"/>
+	<rect width="16.000000" height="12.000000" transform="translate(4.000000 4.000000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip2_2090)">
+		<rect width="24.000000" height="12.000000" transform="translate(0.000000 4.000000)" fill="#FFFFFF" fill-opacity="0"/>
+		<rect width="23.821651" height="11.910823" transform="translate(0.000000 4.000000)" fill="#FFFFFF" fill-opacity="0"/>
+		<path d="M0 4L23.82 4L23.82 16L0 16L0 4Z" fill="#0039A6" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path  d="M0 4L0 5.34L21.15 16L23.82 16L23.82 14.65L2.66 4L0 4ZM23.82 4L23.82 5.34L2.66 16L0 16L0 14.65L21.15 4L23.82 4Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path d="M9.92 4L9.92 16L13.89 16L13.89 4L9.92 4ZM0 8L0 11.99L23.82 11.99L23.82 8L0 8Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path  d="M0 8.8L0 11.2L23.82 11.2L23.82 8.8L0 8.8ZM10.71 4L10.71 16L13.1 16L13.1 4L10.71 4ZM0 16L7.93 11.99L9.71 11.99L1.77 16L0 16ZM0 4L7.93 8L6.16 8L0 4.89L0 4ZM14.1 8L22.04 4L23.82 4L15.88 8L14.1 8ZM23.82 16L15.88 11.99L17.65 11.99L23.82 15.1L23.82 16Z" fill="#D52B1E" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>

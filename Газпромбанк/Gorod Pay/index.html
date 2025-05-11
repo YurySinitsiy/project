@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Приложение GorodPay - Газпромбанк</title>
+</head>
+<body>
+<main>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <button class="header__menu" type="button" aria-label="Открыть меню">
+          <svg width="24" height="24" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-dots"></use>
+          </svg>
+        </button>
+        <a class="header__logo" href="#" aria-label="Ссылка на главную страницу">
+          <svg width="181" height="40" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-header-logo"></use>
+          </svg>
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Частным клиентам</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Корпоративным клиентам</a>
+            </li>
+            <li class="main-nav__item main-nav__item--submenu">
+              <button class="main-nav__sub-button" type="button" aria-label="Открыть выпадающее меню">
+                <svg width="20" height="20" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-menu-dots"></use>
+                </svg>
+              </button>
+              <ul class="main-nav__sublist">
+                <li class="main-nav__subitem">
+                  <a class="main-nav__link" href="#">Private Banking</a>
+                </li>
+                <li class="main-nav__subitem">
+                  <a class="main-nav__link" href="#">МСБ</a>
+                </li>
+                <li class="main-nav__subitem">
+                  <a class="main-nav__link" href="#">Финансовым организациям</a>
+                </li>
+                <li class="main-nav__subitem">
+                  <a class="main-nav__link" href="#">Инвесторам</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <a class="header__signin" href="#">Личный кабинет</a>
+        <a class="btn header__download" href="#">
+          <svg class="header__download-icon" width="20" height="20" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-qr"></use>
+          </svg>
+          <span class="header__download-text">Скачать приложение</span>
+        </a>
+        <button class="header__burger" type="button" aria-label="Открыть выпадающее меню">
+          <svg width="20" height="20" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__wrapper">
+          <div class="hero__content">
+            <h1 class="hero__heading">GorodPay&nbsp;– удобное приложение для пассажиров</h1>
+            <p class="hero__text">С&nbsp;нами быстрее, комфортнее и&nbsp;выгоднее</p>
+            <div class="hero__buttons">
+              <a class="btn hero__download" href="#">
+                Скачать приложение
+              </a>
+              <button class="hero__button" type="button" aria-label="Скачать приложение">
+                <svg width="24" height="24" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-qr"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <img class="hero__image" src="images/intro-img.png" width="564" height="500" alt="Иллюстрация секции">
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__left">
+          <a class="footer__logo" href="#">
+            <svg class="footer__image" width="48" height="48" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-app-foot"></use>
+            </svg>
+            <span class="footer__text">
+              <span class="footer__mobile">Мобильное приложение</span>
+              <span class="footer__platforms">Для iOS и&nbsp;Android</span>
+            </span>
+          </a>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Транспортные карты</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Транспорт</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">История поездок и&nbsp;чеки</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Вывод карт из&nbsp;стоп-листа</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Вопросы и&nbsp;ответы</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__right">
+          <a class="footer__personal" href="#">Политика защиты и&nbsp;обработки персональных данных</a>
+          <a class="footer__policy" href="#">Политика конфиденциальности</a>
+          <ul class="footer__socials socials">
+            <li class="socials__item">
+              <a class="socials__link" href="#" aria-label="Перейти на страницу телеграм">
+                <svg class="socials__icon" width="15" height="12" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-tg"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#" aria-label="Перейти на страницу ватсапп">
+                <svg class="socials__icon" width="14" height="14" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-wa"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <p class="footer__copyright">© 2024 GorodPay, Банк ГПБ (АО). Сервис предоставляется ООО "Информационные сети", 115035, г. Москва, ул.Новочеремушкинская, 63</p>
+          <span class="footer__info">Информация от 5.01.2024</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+</main>
+</body>
+</html>

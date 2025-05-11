@@ -1,0 +1,20 @@
+.container {
+  width: 100%;
+  min-width: 360px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @include vp-768 {
+    min-width: 768px;
+    padding: 0 20px;
+  }
+
+  @include vp-1024 {
+    min-width: 1024px;
+    padding: 0 40px;
+  }
+
+  @include vp-1304 {
+    max-width: 1304px;
+  }
+}

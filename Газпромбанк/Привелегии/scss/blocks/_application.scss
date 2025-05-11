@@ -1,0 +1,50 @@
+.application {
+  margin: 0 0 60px 0;
+
+  @include vp-1024 {
+    margin: 0 0 100px 0;
+  }
+
+  @include vp-1304 {
+    margin: 0 0 120px 0;
+  }
+
+  &__wrapper {
+    @include vp-1024 {
+      padding: 56px 60px 60px 60px;
+      background-color: $color-solitude-1;
+      border-top: 8px solid $color-royal-blue-1;
+      border-radius: 16px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 28px 0;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+
+    @include vp-768 {
+      margin: 0 0 32px 0;
+      font-size: 28px;
+      line-height: 32px;
+    }
+
+    @include vp-1024 {
+      max-width: 700px;
+      margin: 0 auto 56px auto;
+      font-size: 40px;
+      line-height: 44px;
+      text-align: center;
+      letter-spacing: -0.04em;
+    }
+  }
+
+  .form {
+    @include vp-1024 {
+      margin: 0 auto;
+      max-width: 600px;
+    }
+  }
+}

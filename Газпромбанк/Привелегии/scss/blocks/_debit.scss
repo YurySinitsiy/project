@@ -1,0 +1,89 @@
+.debit {
+  margin: 0 0 60px;
+
+  @include vp-768 {
+    margin: 0 0 75px;
+  }
+
+  @include vp-1024 {
+    margin: 0 0 121px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    margin: 0 0 16px;
+    letter-spacing: -0.02em;
+    color: $color-black-russian;
+
+    @include vp-1024 {
+      position: relative;
+      text-align: center;
+      font-size: 40px;
+      line-height: 44px;
+      letter-spacing: -0.04em;
+      max-width: 736px;
+      margin: 0 auto 20px;
+      background-color: $color-white;
+
+      &::before {
+        content: "";
+        width: 100vw;
+        position: absolute;
+        height: 2px;
+        background-color: $color-royal-blue-1;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 50%;
+        z-index: -1;
+      }
+    }
+  }
+
+  &__descr {
+    display: block;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0 0 28px;
+    color: $color-storm-grey-1;
+
+    @include vp-768 {
+      margin: 0 0 32px;
+    }
+
+    @include vp-1024 {
+      text-align: center;
+      font-size: 18px;
+      line-height: 24px;
+      margin: 0 0 60px;
+    }
+
+    @include vp-1304 {
+      margin: 0 0 80px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    @media (min-width: 450px) {
+      display: grid;
+      gap: 13px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include vp-768 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include vp-1024 {
+      gap: 60px 25px;
+    }
+  }
+}

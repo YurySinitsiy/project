@@ -1,0 +1,102 @@
+.subscriptions {
+  padding: 60px 0;
+  margin: 0 0 60px 0;
+  background-color: $color-bunting;
+
+  @include vp-768 {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  @include vp-1024 {
+    margin: 0 0 100px 0;
+  }
+
+  @include vp-1304 {
+    margin: 0 0 120px 0;
+  }
+
+  &__wrapper {
+    @include vp-768 {
+      padding: 60px 40px;
+      background-color: $color-bunting;
+      border-radius: 16px;
+    }
+
+    @include vp-1024 {
+      padding: 80px 18px;
+    }
+  }
+
+  &__title {
+    margin: 0 auto 16px auto;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: $color-white;
+
+    @include vp-768 {
+      margin: 0 auto 12px 0;
+    }
+
+    @include vp-1024 {
+      margin: 0 auto 20px auto;
+      font-size: 28px;
+      line-height: 32px;
+    }
+  }
+
+  &__text {
+    margin: 0 auto 40px auto;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: $color-mischka;
+
+    @include vp-1024 {
+      max-width: 864px;
+      margin: 0 auto 60px auto;
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    @include vp-1304 {
+      min-width: 100%;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    @include vp-768 {
+      gap: 16px;
+    }
+
+    @include vp-1024 {
+      gap: 12px;
+    }
+
+    @include vp-1304 {
+      gap: 16px;
+    }
+  }
+
+  &__item {
+    width: 160px;
+
+    @include vp-768 {
+      width: 172px;
+    }
+
+    @include vp-1304 {
+      width: 196px;
+    }
+  }
+}

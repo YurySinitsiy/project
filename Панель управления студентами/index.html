@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панель управления студентами</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script defer src="./main.js"></script>
+
+</head>
+
+<body>
+    <div id="container" class="container">
+        <h2 class="title text-center border-bottom">
+            Панель управления студентами
+        </h2>
+        <div class="filtr-block">
+            <h3 class="title text-center">
+                Фильтр
+            </h3>
+            <form id="filter-form" class="filtr-form">
+                <label>
+                    По ФИО
+                </label>
+                <input id="fio-input" class="form-control" type="text">
+                <label>
+                    По факультету
+                </label>
+                <input id="faculty-input" class="form-control" type="text">
+                <label>
+                    По году начала обучения
+                </label>
+                <input id="start-input" class="form-control" type="number">
+                <label>
+                    По году конца обучения
+                </label>
+                <input id="end-input" class="form-control mb-3" type="number">
+                <button id="filter-btn" class="btn btn-primary" type="submit">
+                    Поиск
+                </button>
+            </form>
+        </div>
+        <table class="table thead-dark">
+            <tr>
+                <th id="fullName" class="text-center" style="cursor: pointer">ФИО</th>
+                <th id="faculty" class="text-center" style="cursor: pointer">Факультет</th>
+                <th id="birthdayDate" class="text-center" style="cursor: pointer">Дата рождения и возраст</th>
+                <th id="yearOfStudy" class="text-center" style="cursor: pointer">Годы обучения</th>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

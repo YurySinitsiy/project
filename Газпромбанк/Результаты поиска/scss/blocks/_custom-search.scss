@@ -1,0 +1,51 @@
+.custom-search {
+  width: 100%;
+  position: relative;
+
+  @include vp-1024 {
+  }
+
+  &__field {
+    width: 100%;
+    padding: 16px 16px;
+    border: 1px solid $color-periwinkle;
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-black;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    background-color: inherit;
+
+    @include vp-768 {
+      padding: 18px 19px;
+    }
+
+    &:hover {
+      border-color: $color-manatee;
+    }
+
+    &:focus-visible {
+      border-color: $color-royal-blue-1;
+    }
+  }
+
+  &__btn-group {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    display: flex;
+    gap: 12px;
+
+    @include vp-768 {
+      top: 16px;
+      right: 20px;
+      gap: 16px;
+    }
+  }
+
+  &__btn {
+    color: $color-mischka;
+  }
+
+}

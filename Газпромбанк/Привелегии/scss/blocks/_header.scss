@@ -1,0 +1,152 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding: 15px 0;
+  background-color: $color-white;
+
+  @include vp-768 {
+    padding: 20px 0;
+  }
+
+  @include vp-1024 {
+    padding: 16px 0;
+    background-color: $color-solitude-1;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon-decor {
+    display: none;
+    width: 24px;
+    height: 24px;
+    margin: 0 24px 0 0;
+
+    @include vp-1024 {
+      display: block;
+    }
+  }
+
+  &__logo-link {
+    display: flex;
+    margin: 0 auto 0 0;
+    color: $color-royal-blue-1;
+
+    @include vp-768 {
+      margin: 0 40px 0 0;
+    }
+
+    &:hover,
+    &:focus-visible {
+      color: $color-free-speech-blue;
+    }
+  }
+
+  &__logo-image {
+    @include vp-1024 {
+      width: 170px;
+      height: 36px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+
+    &:first-of-type {
+      margin: 0 auto 0 0;
+    }
+
+    &:last-of-type {
+      @include vp-1024 {
+        margin: 0 8px 0 0;
+      }
+    }
+  }
+
+  &__link {
+    display: none;
+    padding: 0;
+    margin: 0 20px 0 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover,
+    &:focus-visible {
+      color: $color-royal-blue-1;
+    }
+
+    @include vp-1024 {
+      display: flex;
+    }
+
+    &--light {
+      color: $color-storm-grey-1;
+
+      &:last-child {
+        margin: 0 auto 0 0;
+      }
+
+      &:hover,
+      &:focus-visible {
+        color: $color-black-russian;
+      }
+
+      @include vp-1024 {
+        display: none;
+      }
+
+      @include vp-1304 {
+        display: flex;
+      }
+    }
+
+    &--active {
+      color: $color-royal-blue-1;
+
+      &:hover,
+      &:focus-visible {
+        color: $color-royal-blue-2;
+      }
+    }
+  }
+
+  &__search {
+    margin: 0 20px 0 0;
+
+    &:hover,
+    &:focus-visible {
+      color: $color-royal-blue-1;
+    }
+
+    @include vp-1024 {
+      margin: 0 28px 0 0;
+    }
+  }
+
+  .header__login {
+    display: none;
+
+    @include vp-1024 {
+      display: flex;
+      margin: 0 16px 0 0;
+    }
+  }
+
+  &__burger {
+    &:hover,
+    &:focus {
+      color: $color-royal-blue-1;
+    }
+  }
+}

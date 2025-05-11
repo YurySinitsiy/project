@@ -1,0 +1,60 @@
+.custom-input {
+  position: relative;
+  width: 100%;
+
+  &__field {
+    width: 100%;
+    min-height: 56px;
+    padding: 29px 15px 9px 15px;
+    font-size: 14px;
+    line-height: 16px;
+    border: 1px solid $color-periwinkle;
+    border-radius: 10px;
+    outline: none;
+
+    @include vp-768 {
+      padding: 29px 19px 9px 19px;
+    }
+
+    &:hover,
+    &:focus-visible {
+      border-color: $color-royal-blue-1;
+    }
+
+    &--error {
+      border-color: $color-sunset-orange;
+
+      .custom-input__error {
+        display: block;
+      }
+    }
+  }
+
+  &__label {
+    position: absolute;
+    left: 19px;
+    top: 8px;
+    font-size: 12px;
+    line-height: 14px;
+    color: $color-storm-grey-1;
+  }
+
+  &__error {
+    display: none;
+    margin: 4px 0 0 0;
+    font-size: 12px;
+    line-height: 14px;
+    color: $color-sunset-orange;
+  }
+
+  &--error {
+    .custom-input__field {
+      border-color: $color-sunset-orange;
+      background-color: $color-snow;
+    }
+
+    .custom-input__error {
+      display: block;
+    }
+  }
+}

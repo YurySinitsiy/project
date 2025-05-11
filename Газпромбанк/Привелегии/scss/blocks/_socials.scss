@@ -1,0 +1,22 @@
+.socials {
+  display: flex;
+  gap: 8px;
+  padding: 0;
+  list-style: none;
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $color-solitude-2;
+    outline: none;
+
+    &:focus-visible,
+    &:hover {
+      background-color: $color-link-water;
+    }
+  }
+}

@@ -1,0 +1,242 @@
+.connect {
+  margin: 0 0 60px 0;
+
+  @include vp-768 {
+    margin: 0 0 60px 0;
+  }
+
+  @include vp-1024 {
+    margin: 0 0 100px 0;
+  }
+
+  @include vp-1304 {
+    margin: 0 0 120px 0;
+  }
+
+  &__title {
+    margin: 0 0 16px 0;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+
+    @include vp-768 {
+      font-size: 28px;
+      line-height: 32px;
+    }
+
+    @include vp-1024 {
+      max-width: 700px;
+      margin: 0 auto 20px auto;
+      font-size: 40px;
+      line-height: 44px;
+      text-align: center;
+      letter-spacing: -0.04em;
+    }
+  }
+
+  &__text {
+    margin: 0 0 28px 0;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-storm-grey-1;
+
+    @include vp-768 {
+      margin: 0 0 32px 0;
+    }
+
+    @include vp-1024 {
+      margin: 0 auto 40px auto;
+      max-width: 700px;
+      font-size: 18px;
+      line-height: 24px;
+      text-align: center;
+    }
+  }
+
+  &__tabs {
+    display: flex;
+    flex-direction: column;
+
+    @include vp-1024 {
+      align-items: center;
+    }
+  }
+
+  &__tabs-item {
+    display: none;
+
+    &.is-active {
+      display: block;
+    }
+  }
+
+  &__tabs-controls {
+    padding: 3px;
+    margin: 0 0 40px 0;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 0 4px;
+    border: 1px solid $color-hawkes-blue;
+    border-radius: 8px;
+
+    @include vp-768 {
+      min-width: 320px;
+    }
+
+    @include vp-1024 {
+      margin: 0 0 60px 0;
+    }
+
+    @include vp-1304 {
+      margin: 0 0 80px 0;
+    }
+  }
+
+  &__tabs-control {
+    width: calc(50% - 2px);
+    padding: 11px 15px;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-black-russian;
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+
+    @include vp-360 {
+      padding: 11px 25px;
+    }
+
+    @include vp-1024 {
+      padding: 15px 25px;
+    }
+
+    &:hover,
+    &:focus-visible {
+      background-color: $color-solitude-1;
+    }
+
+    &.is-active {
+      color: $color-white;
+      background-color: $color-black-russian;
+    }
+
+  }
+
+  &__list {
+    counter-reset: section;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 24px 0;
+
+    @include vp-1024 {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 60px 64px;
+    }
+
+    @include vp-1304 {
+      gap: 32px;
+      display: flex;
+    }
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0 12px;
+
+    @include vp-768 {
+      gap: 0 20px;
+    }
+
+    @include vp-1024 {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px 0;
+    }
+
+    @include vp-1304 {
+      width: calc(25% - (32px * 3 / 4));
+    }
+
+    &::before {
+      counter-increment: section;
+      content: counter(section) "";
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      color: $color-white;
+      background-color: $color-royal-blue-1;
+      border-radius: 50%;
+
+      @include vp-768 {
+        width: 56px;
+        height: 56px;
+        font-size: 20px;
+        line-height: 24px;
+      }
+
+      @include vp-1024 {
+        width: 72px;
+        height: 72px;
+        font-size: 28px;
+        line-height: 32px;
+      }
+    }
+  }
+
+  &__item-title {
+    margin: 0 0 8px 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+
+    @include vp-1024 {
+      margin: 0 0 16px 0;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+    }
+  }
+
+  &__item-text {
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-storm-grey-1;
+
+    @include vp-768 {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    @include vp-1024 {
+      text-align: center;
+    }
+  }
+
+  &__link {
+    outline: none;
+    color: $color-royal-blue-1;
+
+    &:hover,
+    &:focus-visible {
+      color: $color-free-speech-blue;
+    }
+  }
+}
+
