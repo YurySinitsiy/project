@@ -1,0 +1,80 @@
+@use "../helpers" as *;
+
+.video-player {
+  position: relative;
+  &__video {
+    height: fluid(412, 210);
+    width: 100%;
+    object-fit: cover;
+    border-radius: rem(12);
+
+    @include laptop {
+      border-radius: rem(10);
+    }
+
+    &--small {
+    height: fluid(290, 208);
+
+    }
+  }
+
+  &__panel {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    column-gap: 1rem;
+    padding: rem(30);
+    transition-duration: var(--transition-duration);
+
+    &--center {
+      justify-content: center;
+      align-items: center;
+    }
+
+    &:not(.is-active) {
+      @include hide;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(
+        180deg,
+        rgba(20, 20, 20, 0) 44.27%,
+        #141414 100%
+      );
+    }
+
+    * {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  &__play-button {
+    --size: #{rem(70)};
+
+    @include flex-center;
+    @include square(var(--size));
+
+    padding: 0;
+    color: var(--color-loght);
+    background-color: transparent;
+    border: none;
+
+    @include laptop {
+      --size: #{rem(50)};
+    }
+
+    @include hover {
+      color: var(--color-accent);
+    }
+  }
+
+  &__duration {
+    @include fluid-text(18, 14);
+  }
+}
